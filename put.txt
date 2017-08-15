@@ -1,0 +1,7 @@
+open sftp:%sftp_user%:%sftp_password%@%sftp_server% -hostkey=%sftp_ssh%
+
+option batch abort
+option confirm off
+
+put %put_file% %put_location%
+exit

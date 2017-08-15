@@ -1,0 +1,7 @@
+open sftp:%sftp_user%@%sftp_server% -hostkey=%sftp_ssh% -privatekey=%sftp_private%
+
+option batch abort
+option confirm off
+
+get %get_file% %get_location%
+exit
